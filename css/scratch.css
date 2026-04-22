@@ -1,0 +1,304 @@
+/* =============================================
+   scratch.css — Custom Stylesheet for Gaming / Esports Page
+   ============================================= */
+
+/* 1. Body — font family + base color */
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background-color: #0d0d14;
+    color: #e0e0ff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.75;
+}
+
+/* 2. Navigation bar */
+.nav-bar {
+    background-color: #13132a;
+    border-bottom: 2px solid #7c3aed;
+    padding: 14px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-bar .brand {
+    font-family: 'Rajdhani', 'Impact', 'Segoe UI', sans-serif;
+    color: #a78bfa;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-bar a {
+    color: #c4b5fd;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 0.9rem;
+    letter-spacing: 0.4px;
+    transition: color 0.2s;
+}
+
+.nav-bar a:hover {
+    color: #ffffff;
+}
+
+/* 3. Hero section div — positions + styles the hero block */
+.hero-section {
+    background: linear-gradient(135deg, #0d0d14 0%, #1a0a2e 50%, #0d1827 100%);
+    padding: 85px 40px;
+    text-align: center;
+    border-bottom: 1px solid #2d1b69;
+}
+
+.hero-section h1 {
+    font-family: 'Rajdhani', 'Impact', sans-serif;
+    font-size: 3.6rem;
+    color: #a78bfa;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px rgba(167, 139, 250, 0.45);
+    margin-bottom: 14px;
+}
+
+.hero-section p {
+    font-size: 1.15rem;
+    color: #9ca3c8;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* 4. Main content section div — centers and constrains body content */
+.content-section {
+    max-width: 920px;
+    margin: 52px auto;
+    padding: 0 32px;
+}
+
+/* 5. Section heading style */
+.content-section h2 {
+    font-family: 'Rajdhani', 'Impact', sans-serif;
+    color: #a78bfa;
+    border-left: 4px solid #7c3aed;
+    padding-left: 16px;
+    margin-bottom: 24px;
+    font-size: 1.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* 6. Image style */
+.gaming-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    border: 2px solid #2d1b69;
+    display: block;
+    margin: 24px auto;
+}
+
+/* 7. Video container div — responsive 16:9 iframe wrapper */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #2d1b69;
+    margin: 22px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 8. Nested list styles */
+ol.games-list {
+    color: #c0c8e8;
+    padding-left: 26px;
+}
+
+ol.games-list li {
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+ul.details-list {
+    color: #8090b8;
+    margin-top: 8px;
+    padding-left: 22px;
+    font-weight: 400;
+}
+
+ul.details-list li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+/* 9. Anchor jump navigation box */
+.anchor-nav {
+    background-color: #13132a;
+    border: 1px solid #2d1b69;
+    border-radius: 8px;
+    padding: 18px 26px;
+    margin-bottom: 44px;
+}
+
+.anchor-nav h3 {
+    color: #a78bfa;
+    margin: 0 0 12px 0;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.anchor-nav a {
+    color: #c4b5fd;
+    text-decoration: none;
+    margin-right: 22px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 6px;
+    transition: color 0.2s;
+}
+
+.anchor-nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* 10. Info / highlight box */
+.info-box {
+    background-color: #13132a;
+    border: 1px solid #2d1b69;
+    border-left: 4px solid #7c3aed;
+    border-radius: 0 8px 8px 0;
+    padding: 22px 26px;
+    margin: 22px 0;
+    color: #b0b8d8;
+}
+
+/* 11. Stat grid + cards */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 20px;
+    margin: 32px 0;
+}
+
+.stat-card {
+    background-color: #13132a;
+    border: 1px solid #2d1b69;
+    border-radius: 8px;
+    padding: 22px 16px;
+    text-align: center;
+}
+
+.stat-card .stat-number {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #34d399;
+    display: block;
+}
+
+.stat-card .stat-label {
+    color: #6070a0;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 12. Tableau embed wrapper */
+.tableau-container {
+    border: 2px solid #2d1b69;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 22px 0;
+    background-color: #13132a;
+    min-height: 180px;
+}
+
+/* 13. CTA / app link button */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    color: #ffffff;
+    padding: 14px 38px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: transform 0.18s, box-shadow 0.18s;
+    box-shadow: 0 4px 18px rgba(124, 58, 237, 0.35);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(124, 58, 237, 0.55);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* 14. Footer */
+footer {
+    background-color: #13132a;
+    border-top: 1px solid #2d1b69;
+    padding: 32px;
+    text-align: center;
+    color: #4a5880;
+    font-size: 0.9rem;
+    margin-top: 70px;
+}
+
+footer a {
+    color: #c4b5fd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 15. Image caption */
+.img-caption {
+    text-align: center;
+    color: #506090;
+    font-style: italic;
+    font-size: 0.88rem;
+    margin-top: -14px;
+    margin-bottom: 24px;
+}
+
+/* 16. Call-to-action center block */
+.cta-block {
+    text-align: center;
+    margin: 55px 0;
+}
+
+.cta-block h2 {
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+}
+
+.cta-block p {
+    color: #8090b8;
+    margin-bottom: 24px;
+}

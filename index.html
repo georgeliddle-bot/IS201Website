@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Liddle | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/flatly/bootstrap.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #2980b9 100%);
+            color: #fff;
+            padding: 110px 0 90px;
+        }
+        .hero h1 { font-size: 3.4rem; font-weight: 700; }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 38px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 48px;
+            height: 3px;
+            background-color: #18bc9c;
+            border-radius: 2px;
+        }
+
+        .skill-badge {
+            background-color: #18bc9c;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 4px 3px;
+            font-size: 0.88rem;
+        }
+        .skill-badge.blue   { background-color: #2980b9; }
+        .skill-badge.orange { background-color: #e67e22; }
+        .skill-badge.purple { background-color: #8e44ad; }
+
+        .profile-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 15%;
+            border: 4px solid #18bc9c;
+            box-shadow: 0 4px 20px rgba(0,0,0,.2);
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer { background-color: #2c3e50; color: #bdc3c7; }
+        footer a { color: #18bc9c; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        .card { border: none; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+        .nav-link.extra { color: #18bc9c !important; }
+        .nav-link.extra:hover { color: #fff !important; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">George Liddle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+                    <li class="nav-item"><a class="nav-link extra" href="scratch.html">Esports &amp; Gaming</a></li>
+                    <li class="nav-item"><a class="nav-link extra" href="app.html">Word Game</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1>Hi, I'm <span class="text-warning">George Liddle</span></h1>
+            <p class="lead mt-3 mb-4">Information Systems Student &bull; Brigham Young University &bull; Language Educator</p>
+            <a href="resume.html" class="btn btn-warning btn-lg me-3">View My Résumé</a>
+            <a href="#about"      class="btn btn-outline-light btn-lg">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-4 text-center">
+                    <img src="images/Missionary_Headshot.png" alt="George Liddle" class="profile-circle">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead text-muted">Returned missionary, language teacher, and aspiring Information Systems professional.</p>
+                    <p>
+                        I am a student at <strong>Brigham Young University</strong> pursuing a degree in
+                        <strong>Information Systems</strong>. I recently returned from a two-year mission to the
+                        Adriatic North Mission, where I became fluent in Croatian and Serbian while serving
+                        communities across the region.
+                    </p>
+                    <p>
+                        I currently teach Croatian at the Missionary Training Center in Provo, Utah, and serve
+                        as Sunday School President in my ward. I bring strong leadership, communication, and
+                        mentoring skills developed through years of teaching and ecclesiastical service.
+                    </p>
+                    <a href="resume.html" class="btn btn-success mt-2">See My Full Résumé &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Languages</h2>
+            <div class="row g-4 mt-1">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-success mb-3">&#128187; Technical Skills</h5>
+                            <span class="skill-badge">Microsoft Excel</span>
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">HTML / CSS</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary mb-3">&#129309; Leadership &amp; Teaching</h5>
+                            <span class="skill-badge blue">Mentoring</span>
+                            <span class="skill-badge blue">Instructional Design</span>
+                            <span class="skill-badge blue">Cross-Cultural Communication</span>
+                            <span class="skill-badge blue">Team Leadership</span>
+                            <span class="skill-badge blue">Public Speaking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3" style="color:#8e44ad;">&#127760; Languages</h5>
+                            <span class="skill-badge purple">English (Native)</span>
+                            <span class="skill-badge purple">Croatian (Fluent)</span>
+                            <span class="skill-badge purple">Serbian (Fluent)</span>
+                            <span class="skill-badge purple">Slovenian (Proficient)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title mx-auto d-inline-block">Quick Stats</h2>
+            <div class="row g-4 mt-3 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="card py-4">
+                        <div class="card-body">
+                            <h3 class="text-success fw-bold display-6">4.0</h3>
+                            <p class="text-muted mb-0">GPA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card py-4">
+                        <div class="card-body">
+                            <h3 class="text-success fw-bold display-6">3</h3>
+                            <p class="text-muted mb-0">Languages</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card py-4">
+                        <div class="card-body">
+                            <h3 class="text-success fw-bold display-6">2</h3>
+                            <p class="text-muted mb-0">Leadership Roles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card py-4">
+                        <div class="card-body">
+                            <h3 class="text-success fw-bold display-6">&#9733;</h3>
+                            <p class="text-muted mb-0">Eagle Scout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 George Liddle &mdash; Built with Bootstrap / Flatly</p>
+            <a href="mailto:george.o.liddle@gmail.com" class="me-3">george.o.liddle@gmail.com</a>
+            <a href="scratch.html" class="me-3">Esports &amp; Gaming</a>
+            <a href="app.html">Word Game</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
